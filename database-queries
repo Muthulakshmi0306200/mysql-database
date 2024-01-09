@@ -1,0 +1,40 @@
+how to create database:-
+--------------------------
+CREATE DATABASE company;
+
+how to drop database:-
+------------------------
+drop database company;
+---------------------------------------------------------------------------
+how to craeate a tables:-
+-------------------------
+CREATE table employee(
+	id int PRIMARY KEY AUTO_INCREMENT,
+    emp_name Varchar(50),
+    role_id int,
+    salary varchar(255),
+    address varchar(255)
+);
+-------------------------------------------------------------------------------
+how to insertdata in mysql
+---------------------------
+INSERT INTO employee(first_name, last_name) VALUES ('arun', 'dhika');
+-------------------------------------------------------------------------------
+how to select data in mysql;
+-----------------------------
+SELECT * FROM `employee`;
+-------------------------------------------------------------------------------
+how to select data in mysql with where condition
+---------------------------------------------------
+SELECT * FROM employee WHERE salary >= 10000;
+--------------------------------------------------------------------------------
+where with and condition
+-----------------------------
+SELECT * FROM employee WHERE salary < 10000 AND first_name = 'arun';
+----------------------------------------------------------------------------------
+where with or condition
+-------------------------
+SELECT * FROM employee WHERE salary < 10000  OR first_name = 'arun';
+-----------------------------------------------------------------------------------
+SELECT * FROM employee where first_name IN ('arun','hari');
+-----------------------------------------------------------------------------
